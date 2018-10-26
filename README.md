@@ -5,5 +5,9 @@
 * rasa-core-sdk:0.11.4 
 
 功能：查询火车票
+效果图如下:
+![avatar](https://github.com/V-I-C-T-O-R/rasa-chatbot/tree/master/pic/22.png)
+![avatar](https://github.com/V-I-C-T-O-R/rasa-chatbot/tree/master/pic/11.png)
+
 具体细节请看源码
 ##### 其中,total_word_feature_extractor.dat需要自己训练得出或者从网上已有的训练文件下载得到(ps:由于文件大小原因，上传时删除了训练文件)
