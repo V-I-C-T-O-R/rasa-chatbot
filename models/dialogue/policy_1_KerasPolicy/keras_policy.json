@@ -1,0 +1,4 @@
+{
+  "epochs": 800,
+  "model": "keras_model.h5"
+}

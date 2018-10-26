@@ -1,0 +1,28 @@
+{
+  "states": [
+    "intent_goodbye",
+    "intent_greet",
+    "intent_query_ticket_by_datetime",
+    "intent_query_ticket_by_destination",
+    "intent_query_ticket_by_two_address_time",
+    "entity_origin",
+    "entity_destination",
+    "entity_daytime",
+    "entity_greet",
+    "entity_goodbye",
+    "slot_daytime_0",
+    "slot_destination_0",
+    "slot_goodbye_0",
+    "slot_greet_0",
+    "slot_origin_0",
+    "prev_action_listen",
+    "prev_action_restart",
+    "prev_action_default_fallback",
+    "prev_utter_greet",
+    "prev_utter_query_ticket_by_destination",
+    "prev_utter_query_ticket_by_datetime",
+    "prev_utter_working_on_it",
+    "prev_action_report_ticket",
+    "prev_utter_goodbye"
+  ]
+}

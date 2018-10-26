@@ -1,0 +1,16 @@
+language: "zh"
+
+pipeline:
+- name: "nlp_mitie"
+  model: "data/total_word_feature_extractor.dat"
+- name: "tokenizer_jieba"
+- name: "ner_mitie"
+- name: "ner_synonyms"
+- name: "intent_featurizer_mitie"
+- name: "intent_classifier_sklearn"
+
+project: "ticket"
+fixed_model_name: "nlu_bot"
+path : "models"
+data : "config/train_dataset.json"
+num_threads : 8

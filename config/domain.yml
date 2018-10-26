@@ -1,0 +1,54 @@
+intents:
+  - greet
+  - goodbye
+  - query_ticket_by_two_address_time
+  - query_ticket_by_destination
+  - query_ticket_by_datetime
+
+slots:
+  origin:
+    type: text
+  destination:
+    type: text
+  daytime:
+    type: text
+  goodbye:
+    type: text
+  greet:
+    type: text
+  requested_slot:
+    type: unfeaturized
+
+entities:
+  - origin
+  - destination
+  - daytime
+  - greet
+  - goodbye
+
+actions:
+  - utter_greet
+  - utter_query_ticket_by_destination
+  - utter_query_ticket_by_datetime
+  - utter_working_on_it
+  - action_report_ticket
+  - utter_goodbye
+
+templates:
+  utter_greet:
+    - text: "你好!请说出需要查询的时间,起始地,目的地"
+
+  utter_working_on_it:
+    - text: "正在查询中，请稍后 ..."
+
+  utter_goodbye:
+    - text: "再见！"
+
+  utter_query_ticket_by_destination:
+    - text: "从哪里到哪里呢？"
+
+  utter_query_ticket_by_datetime:
+    - text: "什么时候的票？"
+
+  utter_other:
+    - text: "我还比较小，请说明白点"

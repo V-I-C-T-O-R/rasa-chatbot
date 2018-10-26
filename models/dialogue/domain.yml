@@ -1,0 +1,60 @@
+%YAML 1.1
+---
+actions:
+- utter_greet
+- utter_query_ticket_by_destination
+- utter_query_ticket_by_datetime
+- utter_working_on_it
+- action_report_ticket
+- utter_goodbye
+config:
+  store_entities_as_slots: true
+entities:
+- origin
+- destination
+- daytime
+- greet
+- goodbye
+intents:
+- query_ticket_by_two_address_time:
+    use_entities: true
+- query_ticket_by_destination:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- greet:
+    use_entities: true
+- query_ticket_by_datetime:
+    use_entities: true
+slots:
+  daytime:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  destination:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  goodbye:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  greet:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  origin:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  requested_slot:
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+templates:
+  utter_goodbye:
+  - text: 再见！
+  utter_greet:
+  - text: 你好!请说出需要查询的时间,起始地,目的地
+  utter_other:
+  - text: 我还比较小，请说明白点
+  utter_query_ticket_by_datetime:
+  - text: 什么时候的票？
+  utter_query_ticket_by_destination:
+  - text: 从哪里到哪里呢？
+  utter_working_on_it:
+  - text: 正在查询中，请稍后 ...

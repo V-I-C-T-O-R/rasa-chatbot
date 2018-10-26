@@ -1,0 +1,28 @@
+{
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "rasa_core.policies.keras_policy.KerasPolicy"
+  ],
+  "python": "3.5.2",
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "daytime",
+        "origin",
+        "destination"
+      ]
+    },
+    "action_report_ticket": {
+      "slots": []
+    },
+    "utter_goodbye": {
+      "slots": []
+    }
+  },
+  "rasa_core": "0.11.6",
+  "max_histories": [
+    6,
+    6
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble"
+}
